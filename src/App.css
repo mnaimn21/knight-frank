@@ -1,10 +1,228 @@
-.App {
+.bg {
+  background-color: #FFFFFF;
+}
+
+.banner {
+  background-image: url('./resources/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 9vh;
+  padding-bottom: 12vh;
+}
+
+.bannerTitle {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bannerSubtitle {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10vh;
+  font-weight: bold;
+  font-family: 'Garamond';
+}
+
+.bannerCaption {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.8vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bannerSpacer {
+  height: 3vh;
+}
+
+.webinarWriteupRow {
+  padding-bottom: 12vh;
+  padding-top: 12vh;
+  background-color: #EAE4DA;
+}
+
+.webinarWriteupText {
+  font-size: 2.8vh;
+  font-family: 'Garamond';
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.agendaText {
+  font-size: 2.7vh;
+  font-family: 'Garamond';
+  margin-bottom: 12vh;
+  text-align: center;
+}
+
+.speakersSection {
+  margin-top: 12vh;
+}
+
+.speakersCardMelissa {
+  box-shadow: 5px 5px 15px #888888;
+  margin-left: -10vh;
+  margin-right: 5vh;
+}
+
+.speakersCardSebastian {
+  box-shadow: 5px 5px 15px #888888;
+  margin-right: 5vh;
+}
+
+.speakersCardSam {
+  box-shadow: 5px 5px 15px #888888;
+  margin-right: 5vh;
+}
+
+.speakersCardDominic {
+  box-shadow: 5px 5px 15px #888888;
+  margin-right: 5vh;
+}
+
+.speakersCardPaul {
+  box-shadow: 5px 5px 15px #888888;
+}
+
+.roleText {
+  color: #CE181E;
+  font-weight: bold;
+  font-size: 1.7vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nameText {
+  font-size: 2.3vh;
+  font-family: 'Garamond';
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.designationText {
+  font-size: 1.7vh;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.speakersSpacer {
+  height: 2vh;
+}
+
+.formSection {
+  /* background-color: #FFFFFF; */
+  padding-top: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  margin-top: 7vh;
+  margin-bottom: 2vh;
+  border-radius: 15px;
+}
+
+.formInput {
+  margin-top: 0;
+}
+
+.interestedText {
+  font-family: 'Garamond';
+  font-size: 2.5vh;
+}
+
+.spacerFooter {
+  margin-top: 7vh;
+  margin-bottom: 0;
+}
+
+.footerText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8vh;
+  color: #000000;
+}
+
+.footerText:hover {
+  color: #23395d;
+}
+
+@media screen and (max-width: 999px) {
+  .banner {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+  }
+  .bannerTitle {
+    font-size: 2vh;
+  }
+  .bannerSubtitle {
+    font-size: 5vh;
+  }
+  .bannerCaption {
+    font-size: 2.2vh;
+  }
+  .webinarWriteupRow {
+    padding-bottom: 8vh;
+    padding-top: 8vh;
+  }
+  .webinarWriteupText {
+    font-size: 3vh;
+  }
+  .agendaText {
+    font-size: 3vh;
+    margin-bottom: 8vh;
+  }
+  .speakersSection {
+    margin-top: 0;
+  }
+  .roleText {
+    font-size: 2.5vh;
+  }
+  .nameText {
+    font-size: 3vh;
+  }
+  .designationText {
+    font-size: 2.2vh;
+    margin-bottom: 5vh;
+  }
+  .speakersCardMelissa {
+    box-shadow: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .speakersCardSebastian {
+    box-shadow: none;
+    margin-right: 0;
+  }
+  .speakersCardSam {
+    box-shadow: none;
+    margin-right: 0;
+  }
+  .speakersCardDominic {
+    box-shadow: none;
+    margin-right: 0;
+  }
+  .speakersCardPaul {
+    box-shadow: none;
+  }
+  .interestedText {
+    font-size: 3vh;
+  }
+  .formInput {
+    margin-top: 2.5vh;
+  }
+  .spacerFooter {
+    margin-top: 3vh;
+    margin-bottom: 0;
+  }
+  .formSection {
+    background-color: #FFFFFF;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
