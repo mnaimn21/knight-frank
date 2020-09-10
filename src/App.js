@@ -142,7 +142,7 @@ function App() {
         <Col lg={8}>
           <p className="bannerTitle">SPECIAL ONE-TO-ONE SESSIONS</p>
           <div className="bannerSpacer" />
-          <p className="bannerSubtitle">HELLO UK - Meet & Mingle and Discover Thames in Staines-Upon-Thames</p>
+          <p className="bannerSubtitle">The Best of London, Away from London</p>
           <div className="bannerSpacer" />
           <p className="bannerCaption">20th September 2020, Sunday, 2PM to 6PM</p>
         </Col>
@@ -165,7 +165,7 @@ function App() {
         <Col lg={5} ref={detailsSection}>
           <Row className="webinarWriteupRow">
             <Col>
-              <p className="webinarWriteupTitle">Staines-Upon-Thames, country living, 35 minutes from London Waterloo</p>
+              <p className="webinarWriteupTitle">Staines-Upon-Thames, country living, 35 minutes from London Waterloo.</p>
               <p className="webinarWriteupText">A town set on the River Thames, surrounded by picturesque green space and with a thriving mix of shops, cafés and restaurants. With central London just over half an hour away by train, residents can enjoy the best of both worlds as you revel in the outstanding natural beauty of the surrounding Surrey countryside and towns with their historic and royal significance.</p>
               <Image className="webinarImg" src={Eden1} fluid />
               <p className="webinarWriteupText">Staines-upon-Thames has great road and rail connections. The train station is only a 5 minutes' walk away and with Knightsbridge, Bond Street and the West End less than an hour away by train.<br /><br />Eden Grove offers a stunning collection of suites, one, two and three-bedroom apartments positioned around a stunning landscaped garden with a signature water feature at its heart. Residents will also have exclusive use of a fantastic range of amenities, including a concierge, co-working space, private gym and cinema room all conveniently located on the ground floor of the development.</p>
@@ -245,6 +245,7 @@ function App() {
         <Col lg={3} className="formInput" ref={formSection}>
           <Row className="formContainer">
             <Col>
+              <p className="interestedTitle"><b>RSVP by 18th September, seats limited.</b></p>
               <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
               <p className="interestedText"><FaClock /> 2pm to 6pm</p>
               <p className="interestedText"><FaBuilding /> Healy Mac's Irish Bar & Restaurant<br />Block A4 level G2, Unit 06 - 07,<br />Publika Mall, Solaris Dutamas<br />No. 1, Jalan Solaris Dutamas 1,<br />50480 Kuala Lumpur.</p>
