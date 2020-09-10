@@ -165,7 +165,7 @@ function App() {
         <Col lg={5} ref={detailsSection}>
           <Row className="webinarWriteupRow">
             <Col>
-              <p className="webinarWriteupTitle">An inspiring new residential quarter in Staines-upon-Thames.</p>
+              <p className="webinarWriteupTitle">Staines-Upon-Thames, country living, 35 minutes from London Waterloo</p>
               <p className="webinarWriteupText">A town set on the River Thames, surrounded by picturesque green space and with a thriving mix of shops, cafés and restaurants. With central London just over half an hour away by train, residents can enjoy the best of both worlds as you revel in the outstanding natural beauty of the surrounding Surrey countryside and towns with their historic and royal significance.</p>
               <Image className="webinarImg" src={Eden1} fluid />
               <p className="webinarWriteupText">Staines-upon-Thames has great road and rail connections. The train station is only a 5 minutes' walk away and with Knightsbridge, Bond Street and the West End less than an hour away by train.<br /><br />Eden Grove offers a stunning collection of suites, one, two and three-bedroom apartments positioned around a stunning landscaped garden with a signature water feature at its heart. Residents will also have exclusive use of a fantastic range of amenities, including a concierge, co-working space, private gym and cinema room all conveniently located on the ground floor of the development.</p>
