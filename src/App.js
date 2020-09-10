@@ -191,13 +191,13 @@ function App() {
               <div className="horizontalLine">
                 <hr />
               </div>
-              <p className="webinarWriteupSubtitle">Location of Eden Grove</p>
+              <p className="webinarWriteupSubtitle"><b>Location of Eden Grove</b></p>
               <Image className="locationImg" src={EdenMap} fluid />
               <iframe title="rar-location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4974.399761371527!2d-0.505606!3d51.436123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x873b65ddab5950e5!2sBerkeley%3A%20Eden%20Grove!5e0!3m2!1sen!2ssg!4v1599709203653!5m2!1sen!2ssg" width="100%" height="350" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
               <div className="horizontalLine">
                 <hr />
               </div>
-              <p className="webinarWriteupSubtitle">Why buy at Eden Grove?</p>
+              <p className="webinarWriteupSubtitle"><b>Why buy at Eden Grove?</b></p>
               <ul className="webinarWriteupText">
                 <li>With quick acess to the M25, A4 and M4 motorways, and fast rail connections whisking you to London Waterloo in just 35 minutes.</li>
                 <li>5 mins walk to Staines-Upon-Thames train station and Town Centre Shopping</li>
@@ -218,28 +218,45 @@ function App() {
               <div>
                 <hr />
               </div>
-              <p className="webinarWriteupSubtitle">Amenities</p>
-              <ul className="webinarWriteupText">
-                <li>Gym</li>
-                <li>Concierge</li>
-                <li>Co-working space</li>
-                <li>Cinema</li>
-                <li>Central Garden</li>
-              </ul>
+              <p className="webinarWriteupSubtitle"><b>Amenities</b></p>
+              <Row>
+                <Col lg={6}>
+                  <ul className="webinarWriteupText">
+                    <li>Gym</li>
+                    <li>Concierge</li>
+                    <li>Co-working space</li>
+                  </ul>
+                </Col>
+                <Col lg={6}>
+                  <ul className="webinarWriteupText">
+                    <li>Cinema</li>
+                    <li>Central Garden</li>
+                  </ul>
+                </Col>
+              </Row>
               <div className="horizontalLine">
                 <hr />
               </div>
-              <p className="webinarWriteupSubtitle">Property Information</p>
-              <ul className="webinarWriteupText">
-                <li>Developer: Berkeley</li>
-                <li>Local Authority: Surrey Borough of Spelthorne</li>
-                <li>Address: 17-51 London Roan, Staines-upon-Thames TW18 4AE</li>
-                <li>Architect: Scott Brownrigg</li>
-                <li>Tenure: 999-year lease</li>
-                <li>Completion: Est. Q4 2023/Q1 2024</li>
-                <li>No. of units in Lavender House: 130 (1-bed: 90 units, 2-beds: 40 units) over 12 floors</li>
-                <li>Planning permission: TBA</li>
-              </ul>
+              <p className="webinarWriteupSubtitle"><b>Property Information</b></p>
+              <Row>
+                <Col lg={6}>
+                  <ul className="webinarWriteupText">
+                    <li>Developer: Berkeley</li>
+                    <li>Local Authority: Surrey Borough of Spelthorne</li>
+                    <li>Address: 17-51 London Roan, Staines-upon-Thames TW18 4AE</li>
+                    <li>Architect: Scott Brownrigg</li>
+                  </ul>
+                </Col>
+                <Col lg={6}>
+                  <ul className="webinarWriteupText">
+                    <li>Tenure: 999-year lease</li>
+                    <li>Completion: Est. Q4 2023/Q1 2024</li>
+                    <li>No. of units in Lavender House: 130 (1-bed: 90 units, 2-beds: 40 units) over 12 floors</li>
+                    <li>Planning permission: TBA</li>
+                  </ul>
+                </Col>
+              </Row>
+
             </Col>
           </Row>
         </Col>
@@ -247,18 +264,23 @@ function App() {
         <Col lg={3} className="formInput" ref={formSection}>
           <Row className="formContainer">
             <Col>
-              <Image src={Melissa} fluid width="100%" />
-              <p className="agentProfile"><span style={{ fontSize: '2.5vh' }}><b>Melissa Koshy</b></span><br />REN 29404<br /><i>Vice President, Project Marketing & Residential Agency Savills Malaysia</i><br /><FaPhoneSquare /> +6019 239 2011</p>
+              <p className="contactTitle"><b>Contact an agent</b></p>
+              <Row>
+                <Col lg={5}>
+                  <Image src={Melissa} fluid width="100%" />
+                </Col>
+                <Col lg={7}>
+                  <p className="agentProfile"><span style={{ fontSize: '2vh' }}><b>Melissa Koshy</b></span><br />REN 29404<br /><i>Vice President, Project Marketing & Residential Agency Savills Malaysia</i><br /><FaPhoneSquare /> +6019 239 2011</p>
+                </Col>
+              </Row>
               <div className="horizontalLine">
                 <hr />
               </div>
+              <p className="interestedHeader"><b><u>The Best of London, Away from London</u></b></p>
               <p className="interestedTitle"><b>RSVP by 18th September, seats limited.</b></p>
               <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
               <p className="interestedText"><FaClock /> 2pm to 6pm</p>
               <p className="interestedText"><FaBuilding /> Healy Mac's Irish Bar & Restaurant<br />Block A4 level G2, Unit 06 - 07,<br />Publika Mall, Solaris Dutamas<br />No. 1, Jalan Solaris Dutamas 1,<br />50480 Kuala Lumpur.</p>
-              <div className="horizontalLine">
-                <hr />
-              </div>
               <Form className="formSection" onSubmit={handleSubmit}>
                 <Form.Group controlId="formName">
                   <Form.Label className="formLabel">Name*</Form.Label>
