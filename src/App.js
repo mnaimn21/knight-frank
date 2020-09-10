@@ -224,6 +224,9 @@ function App() {
               <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
               <p className="interestedText"><FaClock /> 2pm to 6pm</p>
               <p className="interestedText"><FaBuilding /> Healy Mac's Irish Bar & Restaurant<br />Block A4 level G2, Unit 06 - 07,<br />Publika Mall, Solaris Dutamas<br />No. 1, Jalan Solaris Dutamas 1,<br />50480 Kuala Lumpur.</p>
+              <div className="horizontalLine">
+                <hr />
+              </div>
               <Form className="formSection" onSubmit={handleSubmit}>
                 <Form.Group controlId="formName">
                   <Form.Label className="formLabel">Name*</Form.Label>
