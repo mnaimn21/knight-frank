@@ -73,8 +73,10 @@
 
 .formContainer {
   background-color: #EAE4DA;
-  padding-top: 5vh;
-  padding-bottom: 3vh;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
 .formSection {
@@ -170,10 +172,13 @@ ul li::before {
     padding-top: 4vh;
   }
   .webinarWriteupText {
-    font-size: 3vh;
+    font-size: 2.8vh;
   }
   .formContainer {
     padding-top: 6vh;
+    padding-bottom: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
   }
   .formInput {
     padding-top: 0;

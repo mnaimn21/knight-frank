@@ -219,8 +219,8 @@ function App() {
         </Col>
         <Col lg={1} />
         <Col lg={3} className="formInput">
-          <Row>
-            <Col className="formContainer">
+          <Row className="formContainer">
+            <Col>
               <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
               <p className="interestedText"><FaClock /> 2pm to 6pm</p>
               <p className="interestedText"><FaBuilding /> Healy Mac's Irish Bar & Restaurant<br />Block A4 level G2, Unit 06 - 07,<br />Publika Mall, Solaris Dutamas<br />No. 1, Jalan Solaris Dutamas 1,<br />50480 Kuala Lumpur.</p>
