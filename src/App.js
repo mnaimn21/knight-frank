@@ -7,7 +7,7 @@ import InputMask from "react-input-mask";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { FaClock, FaCalendar, FaBuilding } from 'react-icons/fa';
+import { FaClock, FaCalendar, FaBuilding, FaPhoneSquare } from 'react-icons/fa';
 
 import Eden1 from './resources/images/eden1.jpg';
 import Eden2 from './resources/images/eden2.jpg';
@@ -16,7 +16,9 @@ import Eden4 from './resources/images/eden4.jpg';
 import Eden5 from './resources/images/eden5.jpg';
 import Eden6 from './resources/images/eden6.jpg';
 
-// import EdenMap from './resources/images/eden-map.jpg';
+import Melissa from './resources/images/melissa.jpg';
+
+import EdenMap from './resources/images/eden-map.jpg';
 
 import WhyBuy1 from './resources/images/why-buy1.jpg';
 import WhyBuy2 from './resources/images/why-buy2.jpg';
@@ -161,8 +163,8 @@ function App() {
       </Row>
 
       <Row>
-        <Col lg={2} />
-        <Col lg={5} ref={detailsSection}>
+        <Col lg={1} />
+        <Col lg={6} ref={detailsSection}>
           <Row className="webinarWriteupRow">
             <Col>
               <p className="webinarWriteupTitle">Staines-Upon-Thames, country living, 35 minutes from London Waterloo.</p>
@@ -186,11 +188,11 @@ function App() {
                   <Image src={Eden6} fluid />
                 </Carousel.Item>
               </Carousel>
-              {/* <Image className="webinarImg" src={EdenMap} fluid /> */}
               <div className="horizontalLine">
                 <hr />
               </div>
               <p className="webinarWriteupSubtitle">Location of Eden Grove</p>
+              <Image className="locationImg" src={EdenMap} fluid />
               <iframe title="rar-location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4974.399761371527!2d-0.505606!3d51.436123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x873b65ddab5950e5!2sBerkeley%3A%20Eden%20Grove!5e0!3m2!1sen!2ssg!4v1599709203653!5m2!1sen!2ssg" width="100%" height="350" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
               <div className="horizontalLine">
                 <hr />
@@ -245,6 +247,11 @@ function App() {
         <Col lg={3} className="formInput" ref={formSection}>
           <Row className="formContainer">
             <Col>
+              <Image src={Melissa} fluid width="100%" />
+              <p className="agentProfile"><span style={{ fontSize: '2.5vh' }}><b>Melissa Koshy</b></span><br />REN 29404<br /><i>Vice President, Project Marketing & Residential Agency Savills Malaysia</i><br /><FaPhoneSquare /> +6019 239 2011</p>
+              <div className="horizontalLine">
+                <hr />
+              </div>
               <p className="interestedTitle"><b>RSVP by 18th September, seats limited.</b></p>
               <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
               <p className="interestedText"><FaClock /> 2pm to 6pm</p>
