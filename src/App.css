@@ -140,6 +140,10 @@
   margin-bottom: 1.5vh;
 }
 
+.mobileView {
+  display: none;
+}
+
 ul {
   list-style: none;
 }
@@ -169,7 +173,7 @@ ul li::before {
   }
   .webinarWriteupRow {
     padding-bottom: 4vh;
-    padding-top: 4vh;
+    padding-top: 2vh;
   }
   .webinarWriteupText {
     font-size: 2.8vh;
@@ -182,6 +186,9 @@ ul li::before {
   }
   .formInput {
     padding-top: 0;
+  }
+  .mobileView {
+    display: block;
   }
 }
 

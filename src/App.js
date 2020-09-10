@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Form, Button, Image, Spinner, Carousel } from 'react-bootstrap';
 
 // import ReactPixel from 'react-facebook-pixel';
@@ -33,6 +33,19 @@ function App() {
 
   // ReactPixel.init('315006466443539', options);
   // ReactPixel.pageView();
+
+  const detailsSection = useRef(null);
+  const formSection = useRef(null);
+  const gotoDetailsSection = () =>
+    window.scrollTo({
+      top: detailsSection.current.offsetTop,
+      behavior: "smooth"
+    });
+  const gotoFormSection = () =>
+    window.scrollTo({
+      top: formSection.current.offsetTop,
+      behavior: "smooth"
+    });
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -137,8 +150,19 @@ function App() {
       </Row>
 
       <Row>
+        <Col xs={6} sm={6} className="mobileView">
+          <Button block style={{ backgroundColor: '#FFFFFF', borderColor: '#FFFFFF', color: '#808080', marginTop: '2vh', fontFamily: 'Arial' }} onClick={gotoDetailsSection}>Details</Button>
+          <hr />
+        </Col>
+        <Col xs={6} sm={6} className="mobileView">
+          <Button block style={{ backgroundColor: '#FFFFFF', borderColor: '#FFFFFF', color: '#808080', marginTop: '2vh', fontFamily: 'Arial' }} onClick={gotoFormSection}>Sign Up</Button>
+          <hr />
+        </Col>
+      </Row>
+
+      <Row>
         <Col lg={2} />
-        <Col lg={5}>
+        <Col lg={5} ref={detailsSection}>
           <Row className="webinarWriteupRow">
             <Col>
               <p className="webinarWriteupTitle">An inspiring new residential quarter in Staines-upon-Thames.</p>
@@ -218,7 +242,7 @@ function App() {
           </Row>
         </Col>
         <Col lg={1} />
-        <Col lg={3} className="formInput">
+        <Col lg={3} className="formInput" ref={formSection}>
           <Row className="formContainer">
             <Col>
               <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
