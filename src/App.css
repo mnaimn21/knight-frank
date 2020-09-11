@@ -6,8 +6,8 @@
   background-image: url('./resources/images/banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 9vh;
-  padding-bottom: 12vh;
+  padding-top: 15vh;
+  padding-bottom: 22vh;
 }
 
 .bannerTitle {
@@ -33,7 +33,7 @@
 }
 
 .bannerSpacer {
-  height: 3vh;
+  height: 7vh;
 }
 
 .webinarWriteupRow {
@@ -92,6 +92,11 @@
   font-size: 2.2vh;
 }
 
+.agentName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+}
+
 .agentProfile {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6vh;
@@ -105,6 +110,7 @@
 .interestedHeader {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3.2vh;
+  margin-top: 1vh;
 }
 
 .interestedTitle {
@@ -168,6 +174,10 @@
   display: none;
 }
 
+.desktopView {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
@@ -183,8 +193,8 @@ ul li::before {
 
 @media screen and (max-width: 999px) {
   .banner {
-    padding-top: 7vh;
-    padding-bottom: 7vh;
+    padding-top: 16vh;
+    padding-bottom: 25vh;
   }
   .bannerTitle {
     font-size: 2vh;
@@ -202,8 +212,18 @@ ul li::before {
   .webinarWriteupText {
     font-size: 2.8vh;
   }
+  .interestedHeader {
+    margin-top: 2vh;
+  }
+  .agentName {
+    font-size: 2.4vh;
+  }
+  .agentProfile {
+    margin-top: 2vh;
+    font-size: 2.2vh;
+  }
   .formContainer {
-    padding-top: 6vh;
+    padding-top: 4vh;
     padding-bottom: 3vh;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -213,6 +233,9 @@ ul li::before {
   }
   .mobileView {
     display: block;
+  }
+  .desktopView {
+    display: none;
   }
 }
 

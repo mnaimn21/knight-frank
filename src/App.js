@@ -192,7 +192,7 @@ function App() {
                 <hr />
               </div>
               <p className="webinarWriteupSubtitle"><b>Location of Eden Grove</b></p>
-              <Image className="locationImg" src={EdenMap} fluid />
+              <Image className="locationImg" src={EdenMap} fluid width='100%' />
               <iframe title="rar-location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4974.399761371527!2d-0.505606!3d51.436123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x873b65ddab5950e5!2sBerkeley%3A%20Eden%20Grove!5e0!3m2!1sen!2ssg!4v1599709203653!5m2!1sen!2ssg" width="100%" height="350" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
               <div className="horizontalLine">
                 <hr />
@@ -220,14 +220,25 @@ function App() {
               </div>
               <p className="webinarWriteupSubtitle"><b>Amenities</b></p>
               <Row>
-                <Col lg={6}>
+                <Col lg={12} className="mobileView">
+                  <ul className="webinarWriteupText">
+                    <li>Gym</li>
+                    <li>Concierge</li>
+                    <li>Co-working space</li>
+                    <li>Cinema</li>
+                    <li>Central Garden</li>
+                  </ul>
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={6} className="desktopView">
                   <ul className="webinarWriteupText">
                     <li>Gym</li>
                     <li>Concierge</li>
                     <li>Co-working space</li>
                   </ul>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="desktopView">
                   <ul className="webinarWriteupText">
                     <li>Cinema</li>
                     <li>Central Garden</li>
@@ -239,7 +250,21 @@ function App() {
               </div>
               <p className="webinarWriteupSubtitle"><b>Property Information</b></p>
               <Row>
-                <Col lg={6}>
+                <Col lg={12} className="mobileView">
+                  <ul className="webinarWriteupText">
+                    <li>Developer: Berkeley</li>
+                    <li>Local Authority: Surrey Borough of Spelthorne</li>
+                    <li>Address: 17-51 London Roan, Staines-upon-Thames TW18 4AE</li>
+                    <li>Architect: Scott Brownrigg</li>
+                    <li>Tenure: 999-year lease</li>
+                    <li>Completion: Est. Q4 2023/Q1 2024</li>
+                    <li>No. of units in Lavender House: 130 (1-bed: 90 units, 2-beds: 40 units) over 12 floors</li>
+                    <li>Planning permission: TBA</li>
+                  </ul>
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={6} className="desktopView">
                   <ul className="webinarWriteupText">
                     <li>Developer: Berkeley</li>
                     <li>Local Authority: Surrey Borough of Spelthorne</li>
@@ -247,7 +272,7 @@ function App() {
                     <li>Architect: Scott Brownrigg</li>
                   </ul>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="desktopView">
                   <ul className="webinarWriteupText">
                     <li>Tenure: 999-year lease</li>
                     <li>Completion: Est. Q4 2023/Q1 2024</li>
@@ -256,7 +281,10 @@ function App() {
                   </ul>
                 </Col>
               </Row>
-
+              <div className="horizontalLine">
+                <hr />
+              </div>
+              <iframe title="edengrove-yt-video" style={{ marginTop: '2vh' }} width="100%" height="450" src="https://www.youtube.com/embed/ltduUbaTaaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </Col>
           </Row>
         </Col>
@@ -270,53 +298,57 @@ function App() {
                   <Image src={Melissa} fluid width="100%" />
                 </Col>
                 <Col lg={7}>
-                  <p className="agentProfile"><span style={{ fontSize: '2vh' }}><b>Melissa Koshy</b></span><br />REN 29404<br /><i>Vice President, Project Marketing & Residential Agency Savills Malaysia</i><br /><FaPhoneSquare /> +6019 239 2011</p>
+                  <p className="agentProfile"><span className="agentName"><b>Melissa Koshy</b></span><br />REN 29404<br /><i>Vice President, Project Marketing & Residential Agency Savills Malaysia</i><br /><FaPhoneSquare /> +6019 239 2011</p>
                 </Col>
               </Row>
               <div className="horizontalLine">
                 <hr />
               </div>
-              <p className="interestedHeader"><b><u>The Best of London, Away from London</u></b></p>
-              <p className="interestedTitle"><b>RSVP by 18th September, seats limited.</b></p>
-              <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
-              <p className="interestedText"><FaClock /> 2pm to 6pm</p>
-              <p className="interestedText"><FaBuilding /> Healy Mac's Irish Bar & Restaurant<br />Block A4 level G2, Unit 06 - 07,<br />Publika Mall, Solaris Dutamas<br />No. 1, Jalan Solaris Dutamas 1,<br />50480 Kuala Lumpur.</p>
-              <Form className="formSection" onSubmit={handleSubmit}>
-                <Form.Group controlId="formName">
-                  <Form.Label className="formLabel">Name*</Form.Label>
-                  <Form.Control required name="Name" type="text" value={name} onChange={onNameChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
-                </Form.Group>
-                <Form.Group controlId="formEmail">
-                  <Form.Label className="formLabel">Email*</Form.Label>
-                  <Form.Control required name="Email" type="email" value={email} onChange={onEmailChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
-                </Form.Group>
-                <Form.Group controlId="formPhoneNo">
-                  <Form.Label className="formLabel">Telephone*</Form.Label>
-                  <InputMask mask="+60 99 999 99999" maskPlaceholder={null} maskChar={null} value={phoneNo} onChange={onPhoneNoChange}>
-                    <Form.Control required name="Telephone" type="tel" style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
-                  </InputMask>
-                </Form.Group>
-                <Form.Group controlId="formTimeSlot">
-                  <Form.Label className="formLabel">Time Slots*</Form.Label>
-                  <Form.Control name="Time Slot" required value={timeSlot} as="select" onChange={onTimeSlotChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} >
-                    <option value="" disabled="disabled">- Choose time slot -</option>
-                    <option>2pm</option>
-                    <option>3pm</option>
-                    <option>4pm</option>
-                    <option>5pm</option>
-                  </Form.Control>
-                </Form.Group>
-                <Form.Group controlId="formEnquiry">
-                  <Form.Label className="formLabel">Enquiry</Form.Label>
-                  <Form.Control name="Enquiry" as="textarea" rows="3" value={enquiry} onChange={onEnquiryChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
-                </Form.Group>
-                <Button type="submit" disabled={loading ? true : false} block style={{ marginTop: "1vh", borderRadius: "1", backgroundColor: "#FEE850", borderColor: "#FEE850", color: "#000000", fontFamily: "Arial", fontSize: "1.7vh", paddingLeft: "4vh", paddingRight: "4vh", paddingTop: "1vh", paddingBottom: "1vh" }}>
-                  {
-                    loading ? <Spinner animation="border" variant="light" size="sm" /> : 'Submit'
-                  }
-                </Button>
-              </Form>
-              <p className="privacyNoticeText">PRIVACY NOTICE: We may use your personal information in our provision of services to you. Please see our <a style={{ color: "#808080" }} href="https://www.savills.com.my/footer/privacy-policy.aspx"><b>privacy notice</b></a> for details of how your personal information will be used.</p>
+              <Row>
+                <Col>
+                  <p className="interestedHeader"><b><u>The Best of London, Away from London</u></b></p>
+                  <p className="interestedTitle"><b>RSVP by 18th September, seats limited.</b></p>
+                  <p className="interestedText"><FaCalendar /> Sunday, 20 September 2020</p>
+                  <p className="interestedText"><FaClock /> 2pm to 6pm</p>
+                  <p className="interestedText"><FaBuilding /> Healy Mac's Irish Bar & Restaurant<br />Block A4 level G2, Unit 06 - 07,<br />Publika Mall, Solaris Dutamas<br />No. 1, Jalan Solaris Dutamas 1,<br />50480 Kuala Lumpur.</p>
+                  <Form className="formSection" onSubmit={handleSubmit}>
+                    <Form.Group controlId="formName">
+                      <Form.Label className="formLabel">Name*</Form.Label>
+                      <Form.Control required name="Name" type="text" value={name} onChange={onNameChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
+                    </Form.Group>
+                    <Form.Group controlId="formEmail">
+                      <Form.Label className="formLabel">Email*</Form.Label>
+                      <Form.Control required name="Email" type="email" value={email} onChange={onEmailChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
+                    </Form.Group>
+                    <Form.Group controlId="formPhoneNo">
+                      <Form.Label className="formLabel">Telephone*</Form.Label>
+                      <InputMask mask="+60 99 999 99999" maskPlaceholder={null} maskChar={null} value={phoneNo} onChange={onPhoneNoChange}>
+                        <Form.Control required name="Telephone" type="tel" style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
+                      </InputMask>
+                    </Form.Group>
+                    <Form.Group controlId="formTimeSlot">
+                      <Form.Label className="formLabel">Time Slots*</Form.Label>
+                      <Form.Control name="Time Slot" required value={timeSlot} as="select" onChange={onTimeSlotChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} >
+                        <option value="" disabled="disabled">- Choose time slot -</option>
+                        <option>2pm</option>
+                        <option>3pm</option>
+                        <option>4pm</option>
+                        <option>5pm</option>
+                      </Form.Control>
+                    </Form.Group>
+                    <Form.Group controlId="formEnquiry">
+                      <Form.Label className="formLabel">Enquiry</Form.Label>
+                      <Form.Control name="Enquiry" as="textarea" rows="3" value={enquiry} onChange={onEnquiryChange} style={{ borderRadius: "0", backgroundColor: "#F2F2F2", borderColor: "#F2F2F2", fontFamily: "Arial", fontSize: "1.8vh" }} />
+                    </Form.Group>
+                    <Button type="submit" disabled={loading ? true : false} block style={{ marginTop: "1vh", borderRadius: "1", backgroundColor: "#FEE850", borderColor: "#FEE850", color: "#000000", fontFamily: "Arial", fontSize: "1.7vh", paddingLeft: "4vh", paddingRight: "4vh", paddingTop: "1vh", paddingBottom: "1vh" }}>
+                      {
+                        loading ? <Spinner animation="border" variant="light" size="sm" /> : 'Submit'
+                      }
+                    </Button>
+                  </Form>
+                  <p className="privacyNoticeText">PRIVACY NOTICE: We may use your personal information in our provision of services to you. Please see our <a style={{ color: "#808080" }} href="https://www.savills.com.my/footer/privacy-policy.aspx"><b>privacy notice</b></a> for details of how your personal information will be used.</p>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Col>
