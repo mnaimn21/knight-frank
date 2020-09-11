@@ -3,37 +3,48 @@
 }
 
 .banner {
-  background-image: url('./resources/images/banner.jpg');
+  background-image: url('./resources/images/banner2.jpg');
+  /* background-image: url('./resources/images/eden4.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 15vh;
-  padding-bottom: 22vh;
+  /* padding-top: 15vh;
+  padding-bottom: 22vh; */
+  padding-top: 12vh;
+  padding-bottom: 18vh;
 }
 
 .bannerTitle {
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
+  color: #FFDF00;
   text-align: center;
-  font-size: 2.2vh;
+  /* font-size: 2.2vh; */
+  font-size: 2.8vh;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .bannerSubtitle {
   color: #FFFFFF;
   text-align: center;
-  font-size: 8vh;
+  /* font-size: 8vh; */
+  font-size: 10vh;
   font-weight: bold;
   font-family: 'Garamond';
 }
 
 .bannerCaption {
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
+  color: #FFDF00;
   text-align: center;
-  font-size: 2.7vh;
+  /* font-size: 2.7vh; */
+  font-size: 2.8vh;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .bannerSpacer {
-  height: 7vh;
+  /* height: 7vh; */
+  height: 5vh;
 }
 
 .webinarWriteupRow {
