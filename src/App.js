@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Form, Button, Image, Spinner, Carousel } from 'react-bootstrap';
 
-// import ReactPixel from 'react-facebook-pixel';
+import ReactPixel from 'react-facebook-pixel';
 import InputMask from "react-input-mask";
 
 import './App.css';
@@ -28,13 +28,13 @@ import SavillsLogo from './resources/images/savills.png';
 
 function App() {
 
-  // const options = {
-  //   autoConfig: true,
-  //   debug: false,
-  // };
+  const options = {
+    autoConfig: true,
+    debug: false,
+  };
 
-  // ReactPixel.init('315006466443539', options);
-  // ReactPixel.pageView();
+  ReactPixel.init('723482141532931', options);
+  ReactPixel.pageView();
 
   const detailsSection = useRef(null);
   const formSection = useRef(null);
